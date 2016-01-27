@@ -23,5 +23,3 @@ then
 else
     litecoind -datadir=/var/lib/litecoind/testnet
 fi
-
-bash
