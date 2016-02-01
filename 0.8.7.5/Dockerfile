@@ -18,10 +18,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 #安装litecoind
-RUN wget https://download.litecoin.org/litecoin-$VERSION/linux/litecoin-$VERSION-linux64.tar.gz \
-    && tar zxvf litecoin-$VERSION-linux64.tar.gz \
-    && ln -sfv /opt/litecoind/litecoin-$VERSION/bin/* /usr/local/bin \
-    && rm -rf litecoin-$VERSION-linux64.tar.gz
+RUN wget https://download.litecoin.org/litecoin-0.8.7.5/linux/litecoin-0.8.7.5-linux.tar.xz \
+    && tar -xvf litecoin-0.8.7.5-linux.tar.xz \
+    && ln -sfv /opt/litecoind/litecoin-0.8.7.5-linux/bin/64/* /usr/local/bin \
+    && rm -rf litecoin-0.8.7.5-linux.tar.xz
 
 RUN chmod 755 run.sh
 
