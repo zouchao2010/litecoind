@@ -15,7 +15,7 @@ docker pull zouchao2010/litecoind:0.10.4.0
 ## run(创建并运行一个容器，退出时删除容器)
 ```shell
 docker run  --name litecoind-0.10.4.0 \
-            -h litecoind-0112 \
+            -h litecoind-01040 \
             -p 19332:19332 \
             -p 19333:19333 \
             -v /data/litecoind-0.10.4.0:/var/lib/litecoind \
@@ -29,7 +29,7 @@ docker run  --name litecoind-0.10.4.0 \
 docker run  --name litecoind-0.10.4.0 \
             --restart=always \
             -m 2048m \
-            -h litecoind-0112 \
+            -h litecoind-01040 \
             -p 19332:19332 \
             -p 19333:19333 \
             -v /data/litecoind-0.10.4.0:/var/lib/litecoind \
